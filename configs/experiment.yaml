@@ -1,0 +1,4 @@
+compression:
+  type: svd # or 'tucker'
+  rank: 32
+  ranks: [32, 32, 32]

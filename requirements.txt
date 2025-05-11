@@ -1,0 +1,7 @@
+torch
+pyyaml
+psutil
+tensorly
+pytest
+transformers
+datasets 

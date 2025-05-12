@@ -4,4 +4,4 @@ psutil
 tensorly
 pytest
 transformers
-datasets 
+datasets

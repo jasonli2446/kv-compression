@@ -42,8 +42,8 @@ def main():
     with open(args.config, "r") as f:
         config = yaml.safe_load(f)
 
-    # Get model and device settings from config, with fallbacks to constants
-    model_name = config.get("model", {}).get("name", args.model)
+    # Force use of local model path
+    model_name = "/mnt/vstor/CSE_ECSE_GXD234/Meta-Llama-3-8B-Instruct"
     device_name = config.get("model", {}).get("device", DEFAULT_DEVICE)
     device = torch.device(device_name if torch.cuda.is_available() else "cpu")
 
